@@ -2,19 +2,19 @@
 
 const a = [1,2,3,4,5];
 let reversedArray = (a)=>{
-    reversedArray=[];
+    result=[];
     for(let i = a.length-1; i>=0; i--){
-        reversedArray.push(a[i])
+        result.push(a[i])
     }
-    return reversedArray;
+    return result;
 }
 console.log(`reversed array is: ${reversedArray(a)}`);
 
 // Que 2: find max in array
 
 const b = [1,5,3,9,2,56,89,7];
-let max = (b)=>{
-    let max=0;
+let maximum = (b)=>{
+    let max=b[0];
     for(let i=0; i<=b.length-1; i++){
         if(b[i]>max){
             max=b[i];
@@ -22,4 +22,4 @@ let max = (b)=>{
     }
     return max;
 }
-console.log(`max in array is: ${max(b)}`);
+console.log(`max in array is: ${maximum(b)}`);
